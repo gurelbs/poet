@@ -51,7 +51,7 @@ body{
     color:white;
     border-radius: 7px;
     width: auto;    
-    box-shadow: 0 1px 15px rgb(131, 91, 91);
+    box-shadow: 0 1px 2px rgb(131, 91, 91);
 
 }
 .jumbotron .poem-border{
@@ -150,25 +150,32 @@ body{
  @media (max-width: 991.98px) { 
     .jumbotron h1, .jumbotron .poem-border{
         position: relative;
-        margin-right: 0%;
+        margin-right: 5%;
     }
     .container-bg{
         padding: 5rem 7rem;
     }
     .jumbotron h1{
         width: auto;
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
     .jumbotron .lead {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-    
     .from-text{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .container-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
     }
     .btn-outline-primary {
         color: white;
         font-weight: bolder;
-        font-size: 2em;
+        font-size: 1.2em;
+        padding: 1rem .4rem;
     }
+
  }
