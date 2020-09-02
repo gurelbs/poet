@@ -31,9 +31,7 @@ body{
     background-color: transparent;
     background: rgba(0, 0, 0, 0.8);
     padding: 0;
-    padding-right: 16px;
     padding-left: 16px;
-    border-radius:none;
 }
 .jumbotron .poem-title{
     display: flex;
@@ -42,11 +40,10 @@ body{
 }
 .jumbotron h1{
     position: relative;
-    text-align: center;
     font-weight: bold;
     font-size: 5rem;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 1.5em;
     padding:  0.2em .8em;
     background: transperet;
@@ -90,17 +87,29 @@ body{
     padding: .1em 3em;
     border-radius: 70px 0 70px 0;
     color: rgba(142, 150, 165, 0.671);
-    box-shadow: 0 1px 6px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     font-size: 18px;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.26);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
     line-height: 2;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(83, 83, 83, 0.294);
     font-style: normal;
     margin-right: 3rem;
+    font-weight: 500;
 }
+.from-text a{
+    text-decoration: none;
+    color: rgba(228, 228, 228, 0.671);
+
+}
+.from-text a:hover{
+    color: rgba(134, 157, 200, 0.671);
+}
+.from-text:hover{
+    cursor: pointer;
+}
+
 .jumbotron .my-4{
     width: 50%;
 }
@@ -136,13 +145,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 5rem 10rem;
+
 }
-
-nav.navbar.open {
-    margin-bottom: 120px;
-  }
-
-
 
 @media (min-width: 991.98px) { 
     .nav-link{
@@ -153,24 +157,23 @@ nav.navbar.open {
     }
  }
 
-/* @media (max-width: 991.98px) {  */
     .container-bg{
         padding: 5rem 7rem;
         margin:0;
         margin-right: 16px;
         margin-left: 16px;
     }
-/* } */
+
  @media (max-width: 991.98px) { 
-    .jumbotron h1, .jumbotron .poem-border{
+     .jumbotron .poem-border{
         position: relative;
         margin-right: 5%;
     }
     .container-bg{
         padding: 5rem 7rem;
         margin:0;
-        margin-right: 16px;
-        margin-left: 16px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .jumbotron h1{
         width: auto;
@@ -192,6 +195,10 @@ nav.navbar.open {
         flex-direction: column;
         justify-content: center;
         padding: 2rem;
+    }
+    .container-fluid{
+        padding-left: 16px;
+        padding-right: 32px;
     }
     .btn-outline-primary {
         color: white;
