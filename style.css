@@ -29,7 +29,10 @@ body{
     padding-bottom: 0;
     min-height: 50vh;
     background-color: transparent;
-    background: rgba(0, 0, 0, 0.9);   
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 .jumbotron .poem-title{
     display: flex;
@@ -147,6 +150,15 @@ body{
         margin-right: 5rem;
     }
  }
+
+/* @media (max-width: 991.98px) {  */
+    .container-bg{
+        padding: 5rem 7rem;
+        margin:0;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+/* } */
  @media (max-width: 991.98px) { 
     .jumbotron h1, .jumbotron .poem-border{
         position: relative;
@@ -154,16 +166,24 @@ body{
     }
     .container-bg{
         padding: 5rem 7rem;
+        margin:0;
+        margin-right: 16px;
+        margin-left: 16px;
     }
     .jumbotron h1{
         width: auto;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        margin-top: 2em;
+        text-align: center;
     }
     .jumbotron .lead {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .from-text{
         font-size: 10px;
+        margin: auto;
+        padding: .1em 3em;
+        margin-right: 1rem;
     }
     .container-bg{
         display: flex;
@@ -174,7 +194,7 @@ body{
     .btn-outline-primary {
         color: white;
         font-weight: bolder;
-        font-size: 1.2em;
+        font-size: 1.5em;
         padding: 1rem .4rem;
     }
 
